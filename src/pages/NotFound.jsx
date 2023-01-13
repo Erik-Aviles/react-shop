@@ -2,8 +2,9 @@ import React from 'react'
 
 const NotFound = () => {
   return (
-    <div>
-      Pagina no encontrada
+    <div style={{width: '100%'}}>
+      <p>Pagina no encontrada</p>
+      <p>404</p>
     </div>
   )
 }

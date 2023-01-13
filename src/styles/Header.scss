@@ -1,0 +1,121 @@
+@import "vars";
+
+.menu{
+    display: none;
+}
+.logo{
+    width: 100px;
+}
+.navbar {
+    width: auto;
+    height: 55px;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--text-input-field);
+    
+}
+.navbar-left ul,
+.navbar-right ul{
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 55px;
+}
+.navbar-left{
+    height: 55px;
+    display: flex;
+    align-items: center;
+}
+.navbar-left figure{
+    margin: 0 ;
+}
+.navbar-left ul{
+    margin-left: 25px;
+
+}
+.navbar-left ul li a{
+    padding: 5px;
+}
+.navbar-left ul li a,
+.navbar-right ul li{
+    font-size: var(--sm);
+    color: var(--very-light-pink);
+    text-decoration: none;
+}
+.navbar-left ul li a:hover,
+.navbar-email img:hover{
+    color: var(--hospital-green);
+    border: 1px solid var(--hospital-green);
+    border-radius: 10px;
+}
+.title{
+    display: none;
+    font-size: var(--lg);
+    text-align: center;
+    font-weight: bold;
+    color: var(--black);
+}
+.navbar-right{ 
+    height: 55px;
+    display: flex;
+    align-items: center;
+}
+.navbar-shopping-cart{
+    display: flex;
+
+}
+.shopping-cart{
+    width: 25px;
+    height: 25px;
+}
+.shopping-cart:hover{
+   cursor: pointer;
+}
+.navbar-right .navbar-email{
+    font-size: var(--sm);
+}
+.navbar-shopping-cart{
+    position: relative;
+}
+.navbar-shopping-cart div{
+    width: 15px;
+    height: 15px;
+    background-color: var(--hospital-green);
+    border-radius: 50%;
+    color: var(--black);
+    font-size: var(--sm);
+    font-weight: bold;
+    position: absolute;
+    top: -6px;
+    right: -3px;
+    text-align: center;
+}
+.navbar-email{
+    padding-right: 10px;
+}
+.navbar-email .arron-down{
+    transform: rotate(90deg);
+}
+
+@media (max-width: 680px) {
+.menu{
+    width: 30px;
+    display: block;
+}
+.navbar-left{
+    display: none;
+}
+.navbar-email{
+    display: none;
+}
+.title{
+    display: block;
+    font-size: var(--lg);
+    text-align: center;
+    font-weight: bold;
+    color: var(--black);
+}
+}
