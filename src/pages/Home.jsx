@@ -1,9 +1,10 @@
 import React from 'react'
-import Headre from '../components/Headre'
+import Header from '../components/Header'
+import ProductsList from '../containers/ProductsList'
 
 const Home = () => {
   return (
-    <Headre />
+    <ProductsList />
   )
 }
 
