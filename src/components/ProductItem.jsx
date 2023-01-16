@@ -1,5 +1,6 @@
 import React from "react";
-import '../styles/ProductItem.scss'
+import '../styles/ProductItem.scss';
+import addCart from '@icons/bt_add_to_cart.svg'
 
 const ProductItem = () => {
   return (
@@ -14,7 +15,7 @@ const ProductItem = () => {
           <p>motorbike</p>
         </div>
         <figure>
-          <img src="./Icons/bt_add_to_cart.svg" alt="imagen de muestra" />
+          <img src={addCart} alt="imagen de muestra" />
         </figure>
       </div>
     </div>
