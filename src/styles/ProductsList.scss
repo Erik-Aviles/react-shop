@@ -7,7 +7,38 @@
     place-content: center;
     margin: 3em 0 0 0;
 }
+.Catecory-title {
+    margin: 40px 0;
+    width: 100%;
+    height: 100px;
+    position: relative;
+    background-color: var( --hospital-green);
+    background-image: linear-gradient(90deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.5) 50%);
+   
+}
 
+.Catecory-title img {
+    width: 100%;
+    height: 100%;
+    object-fit: none;
+    opacity: 0.6;
+}
+
+.Catecory-title h1{
+    text-align: center;
+    width: 350px;
+    margin: 0;
+    font-size: var(--xlg);
+    font-weight: bold;
+    color: var(--white);
+    position: absolute;
+    top: 20px;
+    left: calc(50% - 170px);
+    z-index: 1;
+    text-shadow: 0 5px 10px rgba(49, 48, 48, 0.5) ;
+}
 
 @media (max-width: 640px) {
     .ProductListr{

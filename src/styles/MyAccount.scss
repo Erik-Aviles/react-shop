@@ -4,7 +4,6 @@
     width: 100%;
     height: 100vh;
     display: grid;
-    /* OJO */
     place-items: center;
 }
 
@@ -14,16 +13,9 @@
     width: 300px;
 }
 
-.logo {
-    width: 150px;
-    margin-bottom: 50px;
-    justify-self: center;
-    display: none;
-}
-
 .title {
     font-size: var(--lg);
-    margin-bottom: 30px;
+    margin-bottom: 36px;
     text-align: start;
 }
 

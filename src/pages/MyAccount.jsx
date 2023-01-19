@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/MyAccount.scss";
+import "@styles/MyAccount.scss";
 
 const MyAccount = () => {
   return (
@@ -9,17 +9,17 @@ const MyAccount = () => {
 
         <form action="/" className="form">
           <div>
-            <label htmlfor="name" className="label">
+            <label htmlFor="name" className="label">
               Name
             </label>
             <p className="value">Erika Aviles</p>
 
-            <label htmlfor="email" className="label">
+            <label htmlFor="email" className="label">
               Email address
             </label>
             <p className="value">erik8822@hotmail.com</p>
 
-            <label className="label" htmlfor="password">
+            <label className="label" htmlFor="password">
               Password
             </label>
             <p className="value">**********</p>

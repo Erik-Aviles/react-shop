@@ -1,15 +1,16 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import '../styles/Menu.scss';
 
 const Menu = () => {
+
 	return (
-		<div className="Menu">
+		<div className="Menu" >
 			<ul>
 				<li>
-					<a href="/" className="title">My orders</a>
+					<a href="/orders" className="title">My orders</a>
 				</li>
 				<li>
-					<a href="/">My account</a>
+					<a href="/account">My account</a>
 				</li>
 				<li>
 					<a href="/">Sign out</a>
