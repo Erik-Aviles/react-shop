@@ -6,15 +6,22 @@
 	box-sizing: border-box;
 	position: absolute;
 	right: 0;
+	background-color: white;
+	top: 60px;
+	border: 1px solid var(--very-light-pink);
+	border-radius: 6px;
+	z-index: 1;
 }
 .title-container {
 	display: flex;
+	align-items: center;
 }
 .title-container img {
 	transform: rotate(180deg);
 	margin-right: 14px;
 }
-.title {
+.MyOrder-title {
+	margin: 0 0;
 	font-size: var(--lg);
 	font-weight: bold;
 }

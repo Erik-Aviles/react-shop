@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route} from 'react-router-dom'
+import AppContext from '../context/AppContext'
 import Header from '../components/Header';
 import Layout from '../containers/Layout';
 import NewPassword from '../pages/NewPassword';
@@ -19,10 +20,13 @@ import Electronics from '../containers/categories/Electronics';
 import Furniture from '../containers/categories/Furniture';
 import Shoes from '../containers/categories/Shoes';
 import Others from '../containers/categories/Others';
+import useInicialState from '../hooks/useInicialState';
 
 const App = () => {
+  const inicialState = useInicialState()
   return (
-    <BrowserRouter>
+    <AppContext.Provider value= {inicialState}>
+       <BrowserRouter>
       <Header />
       <Layout>
         <Switch>
@@ -45,6 +49,8 @@ const App = () => {
         </Switch>
       </Layout>
     </BrowserRouter>
+    </AppContext.Provider>
+   
   );
 }
 

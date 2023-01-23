@@ -16,7 +16,7 @@ const Shoes = () => {
     <>
       <section className='Catecory-title'>
         <h1>Shoes</h1>
-        {/* <img className='img' src='https://www.artistapirata.com/wp-content/uploads/2018/10/moda-y-diseno-artistapirata-programas-diseno-de-Shoes-y-moda-MEGA.jpg'/> */}
+        <img className='img' src='https://www.runners-high.nl/wp-content/uploads/vijf-kilometer.jpg'/>
       </section>
       <section className="main-container">
         <div className="ProductList">
